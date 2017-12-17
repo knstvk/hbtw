@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>knstvk.hbtw</id>
+  <name>Hide Bottom Tool Windows</name>
+  <version>1.0</version>
+  <vendor email="knstvk@gmail.com" url="https://github.com/knstvk/hbtw">knstvk</vendor>
+
+  <description><![CDATA[
+      Adds an action to hide all bottom tool windows
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="hide_bottom_tool_windows" class="hbtw.HideBottomToolWindowsAction" text="Hide Bottom Tool Windows">
+          <add-to-group group-id="ActiveToolwindowGroup" anchor="first"/>
+      </action>
+  </actions>
+
+</idea-plugin>
