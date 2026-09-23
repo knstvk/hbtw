@@ -1,6 +1,6 @@
 # AGENTS.md
 
-IntelliJ Platform plugin with one action, `hbtw.HideBottomToolWindowsAction`. The build uses Gradle with the IntelliJ Platform Gradle Plugin 2.x. See `README.md` for what the plugin does and the build commands.
+IntelliJ Platform plugin with one action, `hbtw.HideBottomToolWindowsAction`, and one startup activity, `hbtw.HideAiChatStartupActivity`, which hides the AI Assistant tool window (ID `AIAssistant`, title "AI Chat") when a project opens. The build uses Gradle with the IntelliJ Platform Gradle Plugin 2.x. See `README.md` for what the plugin does and the build commands.
 
 ## Platform version and Java version
 

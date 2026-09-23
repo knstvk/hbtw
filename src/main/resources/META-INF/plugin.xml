@@ -4,7 +4,8 @@
   <vendor email="knstvk@gmail.com" url="https://github.com/knstvk/hbtw">knstvk</vendor>
 
   <description><![CDATA[
-      Adds an action to hide all bottom tool windows
+      Adds an action to hide all bottom tool windows.
+      Also hides the AI Chat tool window when a project opens.
     ]]></description>
 
   <depends>com.intellij.modules.platform</depends>
@@ -14,5 +15,9 @@
           <add-to-group group-id="ActiveToolwindowGroup" anchor="first"/>
       </action>
   </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+      <postStartupActivity implementation="hbtw.HideAiChatStartupActivity"/>
+  </extensions>
 
 </idea-plugin>

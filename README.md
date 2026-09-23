@@ -8,6 +8,10 @@ An IntelliJ Platform plugin that adds one action: **Hide Bottom Tool Windows**. 
 - You can also run it with **Find Action** (`Cmd+Shift+A` / `Ctrl+Shift+A`) by typing "Hide Bottom Tool Windows".
 - To assign a keyboard shortcut, go to **Settings → Keymap** and search for the action name.
 
+## Hiding AI Chat on project opening
+
+The AI Assistant plugin opens its **AI Chat** tool window each time a project opens. This plugin hides that tool window right after the project opens. If you open AI Chat yourself later, it stays open.
+
 ## Compatibility
 
 The plugin depends only on the base platform module, so it works in all JetBrains IDEs, version 2025.2 (build 252) or newer.
